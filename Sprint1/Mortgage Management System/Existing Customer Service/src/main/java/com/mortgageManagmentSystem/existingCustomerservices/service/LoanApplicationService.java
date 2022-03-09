@@ -1,0 +1,10 @@
+package com.mortgageManagmentSystem.existingCustomerservices.service;
+
+import com.mortgageManagmentSystem.existingCustomerservices.entity.MortgageLoanApplication;
+import com.mortgageManagmentSystem.existingCustomerservices.exception.LoanApplicationNotFoundException;
+
+public interface LoanApplicationService {
+	
+	public MortgageLoanApplication viewApprovalStatus(int customerId) throws LoanApplicationNotFoundException;
+
+}
